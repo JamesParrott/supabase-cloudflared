@@ -1,5 +1,4 @@
 # Self-hosted Supabase with Cloudflared
-(Caddy instead of Kong)
 
 ## Deployment
 https://supabase.com/docs/guides/self-hosting/docker#dashboard-authentication
