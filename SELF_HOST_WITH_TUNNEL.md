@@ -8,12 +8,6 @@ Get a clone of supabase for the base code
 git clone --depth=1 https://github.com/supabase/supabase
 ```
 
-Copy its Docker compose files to the root
-```sh
-cp -rf supabase/docker/* supabase
-```
-
-
 Clone this repo
 ```sh
 git clone --depth=1 https://github.com/JamesParrott/supabase-cloudflared
@@ -25,9 +19,9 @@ cp -rf supabase-cloudflared/* supabase
 ```
 
 
-Change dir to the supabase project repo's root
+Change dir to the supabase project repo's docker directory
 ```sh
-cd supabase
+cd supabase/docker
 ```
 
 Edit the env variables
@@ -44,7 +38,7 @@ Either comment out the SMTP section, or set SMTP_* to your email senders creds
 
 Start the services (in detached mode)
 ```sh
-docker compose up -f docker-compose.yml docker-compose.cloudflared.yml -d
+docker compose up -f docker-compose.yml -f docker-compose.cloudflared.yml -d
 ```
 
 
