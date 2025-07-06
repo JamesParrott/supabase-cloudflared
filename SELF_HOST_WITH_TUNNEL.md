@@ -31,7 +31,7 @@ nano .env
 Populate the env variables specific to your deployment, including those to be kept secret, e.g.:
 CLOUDFLARED_TOKEN
 
-Either comment out the SMTP section, or set SMTP_* to your email senders creds
+Either comment out the SMTP section, or set SMTP_* to your email sender's creds
 
 
 
